@@ -1,0 +1,268 @@
+/* =====================
+   GENERAL RESET
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* =====================
+     NAVBAR
+  ===================== */
+  .navbar {
+    text-align: center;
+    background-color: #0b3b69;
+    padding: 15px 0;
+    font-weight: bold;
+  }
+  
+  .navbar a {
+    color: #080404;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: #c0e0ff;
+  }
+  
+  /* =====================
+     HERO SLIDESHOW
+  ===================== */
+  .hero-slideshow {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .hero-slideshow img.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .hero-slideshow img.slide.active {
+    opacity: 1;
+  }
+  
+  /* =====================
+     MAIN TITLES
+  ===================== */
+  main h1 {
+    text-align: center;
+    margin: 30px 0 20px;
+  }
+  
+  /* =====================
+     CONTENT BUBBLES (Home & About)
+  ===================== */
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+  }
+  
+  .content-bubble {
+    background-color: #d9eefc;
+    padding: 25px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  /* =====================
+     CONTACT BUBBLES
+  ===================== */
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+  }
+  
+  .contact-bubble {
+    background-color: #d9eefc;
+    padding: 25px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .contact-bubble input,
+  .contact-bubble textarea {
+    width: 90%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .contact-bubble button {
+    padding: 12px 25px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4da6ff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact-bubble button:hover {
+    background-color: #3399ff;
+  }
+  
+  /* =====================
+     RADIO BUTTONS INLINE & CENTERED
+  ===================== */
+  .contact-bubble form label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 60px; /* space between options */
+    font-weight: normal;
+  }
+  
+  .contact-bubble form input[type="radio"] {
+    margin-right: 2px; /* closer to label */
+    margin-left: 0;
+  }
+  
+  .contact-bubble form .radio-group {
+    text-align: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: center;
+  }
+  
+  /* =====================
+     FAQ SEARCH BAR
+  ===================== */
+  .faq-search {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .faq-search input {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  /* =====================
+     FAQ QUESTIONS
+  ===================== */
+  .faq-item {
+    background-color: #d9eefc;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 700px;
+    text-align: left;
+  }
+  
+  /* =====================
+     DARK MODE & BACK TO TOP BUTTONS
+  ===================== */
+  #theme-toggle, #back-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4da6ff;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    z-index: 1000;
+  }
+  
+  #back-to-top {
+    right: 80px;
+  }
+  
+  /* =====================
+     FOOTER
+  ===================== */
+  footer {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* =====================
+     ABOUT PAGE CORE VALUES
+  ===================== */
+  .about-core-values {
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 700px;
+  }
+  
+  .about-core-values p {
+    margin: 10px 0;
+  }
+  
+  /* =====================
+     DARK MODE STYLING
+  ===================== */
+  body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #1f1f1f;
+  }
+  
+  body.dark-mode .navbar a {
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode .content-bubble,
+  body.dark-mode .contact-bubble,
+  body.dark-mode .faq-item {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+  }
+  
+  body.dark-mode button {
+    background-color: #3399ff;
+    color: #fff;
+  }
+  

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Liddell's Tech Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html">HOME</a> |
+    <a href="about.html">ABOUT</a> |
+    <a href="contact.html">CONTACT ME</a> |
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <!-- HERO SLIDESHOW -->
+  <div class="hero-slideshow">
+    <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" class="slide active" alt="IT Support 1">
+    <img src="https://images.unsplash.com/photo-1581092334411-1d1bfa3b7f03" class="slide" alt="IT Support 2">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" class="slide" alt="IT Support 3">
+  </div>
+
+  <main>
+    <h1>Contact Me</h1>
+    <p style="text-align: center; margin-top: 20px;">
+      If you need IT support or have questions, you can reach me directly or use the form below.
+    </p>
+
+    <div class="contact-wrapper">
+
+      <!-- PERSONAL DETAILS BUBBLE -->
+      <div class="contact-bubble">
+        <h2>Joshua Liddell</h2>
+        <p><strong>Mobile:</strong> 0447 183 065</p>
+        <p><strong>Email:</strong> Joshualiddell_1@outlook.com</p>
+      </div>
+
+      <!-- CONTACT FORM BUBBLE -->
+      <div class="contact-bubble">
+        <form action="https://formspree.io/f/mvgwbpqb" method="POST">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="text" name="mobile" placeholder="Mobile" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+
+          <!-- Preferred Contact -->
+          <p>Preferred Contact:</p>
+          <div class="radio-group">
+            <label><input type="radio" name="preferred" value="Mobile" checked> Mobile</label>
+            <label><input type="radio" name="preferred" value="Email"> Email</label>
+          </div>
+
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" placeholder="Message" required></textarea>
+
+          <!-- Priority -->
+          <p>Priority:</p>
+          <div class="radio-group">
+            <label><input type="radio" name="priority" value="2 Weeks" checked> 2 Weeks</label>
+            <label><input type="radio" name="priority" value="1 Week"> 1 Week</label>
+            <label><input type="radio" name="priority" value="ASAP"> ASAP</label>
+          </div>
+
+          <!-- Submit button below priority -->
+          <div style="text-align:center; margin-top:15px;">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- DARK MODE & BACK TO TOP -->
+  <button id="theme-toggle">🌓</button>
+  <button id="back-to-top">⬆</button>
+
+  <footer>© 2025 Liddell's Tech Support</footer>
+  <script src="script.js"></script>
+</body>
+</html>
